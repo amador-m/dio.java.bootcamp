@@ -1,15 +1,10 @@
-package javaBasico.ServicoDeMensagens3;
+package javaBasico.ServicoDeMensagens2;
 
-// polimorfismo: permite que os objetos sejam tratados de maneira mais genérica
-// trata objetos de classes diferentes uniformemente
-// graças à herança, interfaces e métodos 
+// a classe MSNMessenger é ou representa
+// abstração: eu determino como cada um vai implementar de acordo com as suas particularidades 
+// todos precisam fazer a mesma coisa e cada um vai fazer a sua maneira
 public abstract class ServicoDeMensagensPai {
 	public abstract void enviarMensagem();
 	public abstract void receberMensagem();
-	
-	// somente filhos conhecem esse método (os que tem extends)
-	protected void validarConectadoInternet() {
-		System.out.println("Validando se está conectaado a internet");
-	}
 
 }
